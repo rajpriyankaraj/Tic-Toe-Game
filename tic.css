@@ -1,24 +1,24 @@
-/* General Body Style */
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg,#6a11cb,#2575fc);
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
     flex-direction: column;
     color: white;
 }
 
-/* container style */
-.container{
+/* Container Styles */
+.container {
     text-align: center;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0 4px 15px rgba(0, 0,0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 400px;
     min-height: 400px;
     display: flex;
@@ -27,24 +27,24 @@ body{
     align-items: center;
 }
 
-/* header style */
-h1{
+/* Header Styling */
+h1 {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 20px;
 }
 
-/* Board style */
-.board{
+/* Board Styles */
+.board {
     display: grid;
-    grid-template-columns: repeat(3,120px);
-    grid-template-rows:repeat(3,120px) ;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
     gap: 10px;
-    margin-bottom:30px ;
+    margin-bottom: 30px;
 }
 
-/* Individual cells */
-.cell{
+/* Individual Cells */
+.cell {
     width: 120px;
     height: 120px;
     background-color: #fff;
@@ -60,23 +60,25 @@ h1{
     transition: all 0.3s ease;
 }
 
-.cell:hover{
+.cell:hover {
     background-color: #f0f0f0;
 }
 
-.cell.taken{
+.cell.taken {
     pointer-events: none;
     color: #555;
 }
 
-.winning-message{
+
+
+.winning-message {
     font-size: 1.5rem;
     margin-top: 20px;
     color: #333;
 }
 
 /* Restart Button */
-button{
+button {
     padding: 12px 20px;
     font-size: 1.1rem;
     background-color: #28a745;
@@ -86,32 +88,36 @@ button{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-button:hover{
+
+button:hover {
     background-color: #218838;
 }
 
-button:active{
+button:active {
     transform: scale(0.98);
 }
 
-/* Responsive style */
-@media(max-width:500px) {
-    .board{
-        grid-template-columns: repeat(3,100px);
-        grid-template-rows: repeat(3,100px);
+/* Responsive Styles */
+@media (max-width: 500px) {
+    .board {
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
     }
 
-    .cell{
+    .cell {
         width: 100px;
         height: 100px;
     }
 
-    button{
+    button {
         font-size: 1rem;
         padding: 10px 15px;
     }
 
-    h1{
+    h1 {
         font-size: 2rem;
     }
 }
+
+
+
